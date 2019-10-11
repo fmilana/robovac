@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block js_imports %}
+  <script src="{% static 'robovac/js/chat.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'robovac/css/style.css' %}">
+
+<div class="col-4">
+  <div class="container-chatbot">
+    <mybot></mybot>
+  </div>
+</div>
+{% endblock %}

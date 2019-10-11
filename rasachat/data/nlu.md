@@ -7,27 +7,27 @@
 - return to your base
 - go to base
 - can you return to your base
-- in [30 minutes](interval), go to base
-- go home in [an hour](interval)
-- recharge your battery in [45 minutes](interval)
-- in [2 hours](interval) go home
-- can you return to base in [20 minutes](interval)
-- return home in [1 hour](interval)
-- in [an hour and a half](interval), recharge your battery
-- go back home in [half an hour](interval)
-- please recharge your battery in [30 seconds](interval)
-- in [2 hours and a half](interval), go back home
-- in [45 seconds](interval) go to your base
-- I want you to go home in [20 seconds](interval)
-- go back home at [2pm](time)
-- at [6 o'clock](time), go back to your base
-- recharge your battery at [3](time)
-- can you return to your base at [10am](time)
-- at [2 o'clock](time), please return home
-- go to base at [1](time)
-- at [4 pm](time) recharge your battery
-- go back to charge your battery at [3 o'clock](time)
-- return to your base at [5](time)
+- [in 30 minutes](interval), go to base
+- go home [in an hour](interval)
+- recharge your battery [in 45 minutes](interval)
+- [in 2 hours](interval) go home
+- can you return to base [in 20 minutes](interval)
+- return home [in 1 hour](interval)
+- [in an hour and a half](interval), recharge your battery
+- go back home [in half an hour](interval)
+- please recharge your battery [in 30 seconds](interval)
+- [in 2 hours and a half](interval), go back home
+- [in 45 seconds](interval) go to your base
+- I want you to go home [in 20 seconds](interval)
+- go back home [at 2pm](time)
+- [at 6 o'clock](time), go back to your base
+- recharge your battery [at 3](time)
+- can you return to your base [at 10am](time)
+- [at 2 o'clock](time), please return home
+- go to base [at 1](time)
+- [at 4 pm](time) recharge your battery
+- go back to charge your battery [at 3 o'clock](time)
+- return to your base [at 5](time)
 
 ## intent:clean
 - clean
@@ -55,16 +55,16 @@
 - I need you to clean [all of the floor](location)
 - please do some cleaning [by the rig](location)
 - In [30 seconds](interval) start cleaning [around the table](location)
-- clean [next to the bin](location) in [5 minutes](interval)
-- can you clean [under the table](location) in [an hour](interval)
-- you should clean [by the tanks](location) in [half an hour](interval)
-- start cleaning [behind the gauge](location) in [3 hours](interval)
-- clean [by the rig](location) at [6 o'clock](time)
-- I want you to clean [around the sink](location) at [11 am](time)
-- at [2](time), start cleaning [by the rig](location)
-- you should clean [by the sink](location) at [midday](time)
-- I need you to clean [by the table](location) at [3 o'clock](time)
-- you need to clean [around the bin](location) at [1pm](time)
+- clean [next to the bin](location) [in 5 minutes](interval)
+- can you clean [under the table](location) [in an hour](interval)
+- you should clean [by the tanks](location) [in half an hour](interval)
+- start cleaning [behind the gauge](location) [in 3 hours](interval)
+- clean [by the rig](location) [at 6 o'clock](time)
+- I want you to clean [around the sink](location) [at 11 am](time)
+- [at 2](time), start cleaning [by the rig](location)
+- you should clean [by the sink](location) [at midday](time)
+- I need you to clean [by the table](location) [at 3 o'clock](time)
+- you need to clean [around the bin](location) [at 1pm](time)
 - can you clean the dirt towards [45 degrees](angle) to where you are
 - clean [90 degrees](angle) from you
 - please start cleaning [180 degrees](angle) from your position
@@ -181,26 +181,26 @@
 - [under the sink](location)
 
 ## intent:specify_when
-- in [10 minutes](interval)
-- in [5 minutes](interval)
-- in about [30 seconds](interval)
-- start in [an hour](interval)
-- please start in [45 minutes](interval)
-- in [2 hours](interval)
-- start in [an hour and a half](interval)
-- in [3 hours](interval)
-- at [5 o'clock](time)
-- start at [2pm](time)
-- start cleaning at [11](time)
-- clean at [4](time)
-- at [6 pm](time)
-- do that at [midday](time)
-- at [10 am](time)
-- please start at [9](time)
-- at [12](time)
-- at [half past 1](time)
-- clean at [half past 3](time)
-- at [16](time)
+- [in 10 minutes](interval)
+- [in 5 minutes](interval)
+- [in about 30 seconds](interval)
+- start [in an hour](interval)
+- please start [in 45 minutes](interval)
+- [in 2 hours](interval)
+- start [in an hour and a half](interval)
+- [in 3 hours](interval)
+- [at 5 o'clock](time)
+- start [at 2pm](time)
+- start cleaning [at 11](time)
+- clean [at 4](time)
+- [at 6 pm](time)
+- do that [at midday](time)
+- [at 10 am](time)
+- please start [at 9](time)
+- [at 12](time)
+- [at half past 1](time)
+- clean [at half past 3](time)
+- [at 16](time)
 
 ## intent:no
 - no

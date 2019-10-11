@@ -28,6 +28,7 @@ actions:
   - action_battery
   - action_stop
   - action_am_i_at_base
+  - action_fallback
   - utter_where_should_i_clean
   - utter_okay
 
