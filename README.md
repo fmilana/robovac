@@ -1,5 +1,5 @@
 # robovac
-![chatbot screenshot](robovac/static/robovac/images/demo.png)
+![chatbot screenshot](robovac/static/robovac/images/demo.png) <br/><br/>
 Instructions:
 1. run **pip install -r requirements.txt**
 2. run **python manage.py runserver**
