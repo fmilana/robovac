@@ -1,8 +1,58 @@
+## intent:greet
+- hey
+- hello
+- hi
+- hey robovac
+- good morning
+- good evening
+- hey there
+
+## intent:mood_great
+- perfect
+- very good
+- great
+- doing great
+- amazing
+- wonderful
+- I'm good
+- alright
+- fine
+- i'm okay
+- all good
+- not too bad
+- not bad
+
+## intent:mood_sad
+- sad
+- very sad
+- unhappy
+- i don't know
+- bad
+- very bad
+- awful
+- terrible
+- horrible
+- not very good
+- extremely sad
+- so sad
+
+## intent:thank_you
+- thank you
+- thanks
+- thanks robovac
+- ty
+
+## intent:ok
+- ok
+- okay
+- cool
+
 ## intent:go_back_to_base
 - go back to your charger
 - go back home
 - recharge your battery
 - can you go home
+- go back to base
 - go home
 - return to your base
 - go to base
@@ -44,6 +94,7 @@
 - you need to clean
 - you need to start cleaning
 - could you clean again
+- clean [forwards](location)
 - clean [where you are](location)
 - start cleaning [where you are now](location)
 - start cleaning [the lab](location)
@@ -60,8 +111,10 @@
 - you should clean [by the tanks](location) [in half an hour](interval)
 - start cleaning [behind the gauge](location) [in 3 hours](interval)
 - clean [by the rig](location) [at 6 o'clock](time)
+- clean [near the tanks](location) [now](time)
 - I want you to clean [around the sink](location) [at 11 am](time)
 - [at 2](time), start cleaning [by the rig](location)
+- start cleaning [by the bin](location) [now](time)
 - you should clean [by the sink](location) [at midday](time)
 - I need you to clean [by the table](location) [at 3 o'clock](time)
 - you need to clean [around the bin](location) [at 1pm](time)
@@ -131,6 +184,7 @@
 - how much battery do you have
 - how much charge left
 - do you need to recharge your battery?
+- how full is your battery?
 
 ## intent:stop
 - stop
@@ -201,6 +255,8 @@
 - [at half past 1](time)
 - clean [at half past 3](time)
 - [at 16](time)
+- [now](time)
+- [just now](time)
 
 ## intent:no
 - no

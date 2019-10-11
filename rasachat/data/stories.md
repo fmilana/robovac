@@ -1,7 +1,27 @@
-## go_back_to_base
+## greet_happy
+* greet
+  - utter_how_are_you
+* mood_great
+  - utter_great
+
+## greet_sad
+* greet
+  - utter_how_are_you
+* mood_sad
+  - utter_sad
+
+## go_back_to_base_now
 * go_back_to_base
   - action_reset_slots
   - action_check_entities
+  - slot{"location":null,"time":null}
+  - action_go_back_to_base
+
+## go_back_to_base_at_this_time
+* go_back_to_base
+  - action_reset_slots
+  - action_check_entities
+  - slot{"location":null,"time":"in 10 minutes"}
   - action_go_back_to_base
 
 ## clean

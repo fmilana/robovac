@@ -16,6 +16,9 @@ class CheckEntities(Action):
         return "action_check_entities"
 
     def run(self, dispatcher, tracker, domain):
+        location = None
+        time = None
+
         for e in tracker.latest_message['entities']:
             # might need to differentiate between location/angle, time/interval
             if e['entity'] == 'location':
@@ -35,6 +38,7 @@ class GoBackToBase(Action):
         return "action_go_back_to_base"
 
     def run(self, dispatcher, tracker, domain):
+        time = None
         for e in tracker.latest_message['entities']:
             if e['entity'] == 'time':
                 time = e['value']
@@ -46,7 +50,7 @@ class GoBackToBase(Action):
         if time is not None:
             message = "Ok, I will return to my base " + str(time) + "."
         else:
-            message = "Ok, I will return to my base."
+            message = "Ok, I will return to my base now."
 
         dispatcher.utter_message(message)
         return []
