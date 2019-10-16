@@ -57,7 +57,10 @@ templates:
     - text: "Sorry to hear that."
 
 slots:
-  location:
+  location_one:
+    type: text
+
+  location_two:
     type: text
 
   time:

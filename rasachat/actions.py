@@ -7,7 +7,7 @@ class ResetSlots(Action):
         return "action_reset_slots"
 
     def run(self, dispatcher, tracker, domain):
-        return [SlotSet("location", None), SlotSet("time", None)]
+        return [SlotSet("location_one", None), SlotSet("location_two", None), SlotSet("time", None)]
 
 
 # sets slots based on user message entities
@@ -16,21 +16,28 @@ class CheckEntities(Action):
         return "action_check_entities"
 
     def run(self, dispatcher, tracker, domain):
-        location = None
+        location_one = None
+        location_two = None
         time = None
 
         for e in tracker.latest_message['entities']:
             # might need to differentiate between location/angle, time/interval
             if e['entity'] == 'location':
-                location = e['value']
+                if location_one is None:
+                    location_one = e['value']
+                else:
+                    location_two = e['value']
             elif e['entity'] == 'angle':
-                location = e['value']
+                if location_one is None:
+                    location_one = e['value']
+                else:
+                    location_two = e['value']
             elif e['entity'] == 'time':
                 time = e['value']
             elif e['entity'] == 'interval':
                 time = e['value']
 
-        return [SlotSet("location", location), SlotSet("time", time)]
+        return [SlotSet("location_one", location_one), SlotSet("location_two", location_two), SlotSet("time", time)]
 
 
 class GoBackToBase(Action):
@@ -61,15 +68,19 @@ class ActionClean(Action):
         return "action_clean"
 
     def run(self, dispatcher, tracker, domain):
-        location = tracker.get_slot('location')
+        location_one = tracker.get_slot('location_one')
+        location_two = tracker.get_slot('location_two')
         time = tracker.get_slot('time')
 
         # API call here
 
-        if time is not None:
-            message = "Ok, I will clean " + str(location) + " " + str(time) + "."
+        if location_two is None:
+            if time is None:
+                message = "Ok, I will clean " + str(location_one) + " now."
+            else:
+                message = "Ok, I will clean " + str(location_one) + " " + str(time) + "."
         else:
-            message = "Ok, I will clean " + str(location) + " now."
+            message = "Ok, I will clean " + str(location_two) + " when I finish cleaning " + str(location_one) + "."
 
         dispatcher.utter_message(message)
         return []

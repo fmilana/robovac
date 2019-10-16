@@ -122,6 +122,13 @@
 - clean [90 degrees](angle) from you
 - please start cleaning [180 degrees](angle) from your position
 - you should clean [45 degrees](angle) from where you are now
+- clean [by the sink](location), then [behind the gauge](location)
+- please start with [the sink](location), then with [the bin](location)
+- start cleaning [under the table](location) and [by the table](location)
+- you should clean [around the bin](location) and [near the tanks](location)
+- I want you to clean [next to the rig](location) and [around the bin](location)
+- start with [the tanks](location), then clean [under the table](location)
+- after cleaning [the bin](location) can you clean [behind the tanks](location)
 
 ## intent:how_long_left
 - how long will this take?

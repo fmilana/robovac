@@ -14,39 +14,46 @@
 * go_back_to_base
   - action_reset_slots
   - action_check_entities
-  - slot{"location":null,"time":null}
+  - slot{"location_one":null,"location_two":null,"time":null}
   - action_go_back_to_base
 
 ## go_back_to_base_at_this_time
 * go_back_to_base
   - action_reset_slots
   - action_check_entities
-  - slot{"location":null,"time":"in 10 minutes"}
+  - slot{"location_one":null,"location_two":null,"time":"in 10 minutes"}
   - action_go_back_to_base
 
 ## clean
 * clean
   - action_reset_slots
   - action_check_entities
-  - slot{"location":null,"time":null}
+  - slot{"location_one":null,"location_two":null,"time":null}
   - utter_where_should_i_clean
 * specify_where
   - action_check_entities
-  - slot{"location":"by the sink","time":null}
+  - slot{"location_one":"by the sink","location_two":null,"time":null}
   - action_clean
 
-## clean_there
+## clean_one
 * clean
   - action_reset_slots
   - action_check_entities
-  - slot{"location":"around the table","time":null}
+  - slot{"location_one":"around the table","location_two":null,"time":null}
+  - action_clean
+
+## clean_two
+* clean
+  - action_reset_slots
+  - action_check_entities
+  - slot{"location_one":"around the table","location_two":"behind the gauge","time":null}
   - action_clean
 
 ## clean_there_at_this_time
 * clean
   - action_reset_slots
   - action_check_entities
-  - slot{"location":"behind the tanks","time":"2 pm"}
+  - slot{"location_one":"behind the tanks","location_two":null,"time":"2 pm"}
   - action_clean
 
 ## how_long_left
